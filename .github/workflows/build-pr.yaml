@@ -114,7 +114,7 @@ jobs:
           name: chiaki-ng-win_x64-MSYS2-Release-portable.zip
           path: ${{ env.RELEASE_PACKAGE_PATH }}
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
 
       - name: Compile .ISS to .EXE Installer
         uses: Minionguyjpro/Inno-Setup-Action@v1.2.7
@@ -128,7 +128,7 @@ jobs:
           name: chiaki-ng-win_x64-MSYS2-Release-installer.exe
           path: chiaki-ng-windows-installer.exe
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
 
   build-mac_arm64_github:
     name: Build macOSX arm64 version Github
@@ -197,7 +197,7 @@ jobs:
           name: chiaki-ng-macos_arm64-Release.dmg
           path: chiaki-ng-macos_arm64-Release.dmg
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
 
   build-mac_x64:
     name: Build macOSX x86_64 version
@@ -265,7 +265,7 @@ jobs:
           name: chiaki-ng-macos_x86_64-Release
           path: chiaki-ng.dmg
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
 
   build-appimage_x64:
     name: Build chiaki-ng appimage_x64
@@ -309,7 +309,7 @@ jobs:
           name: chiaki-ng.AppImage_x86_64
           path: chiaki-ng/appimage/chiaki-ng.AppImage_x86_64
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
 
   build-appimage_arm64:
     name: Build chiaki-ng appimage_arm64
@@ -352,4 +352,4 @@ jobs:
           name: chiaki-ng.AppImage_arm64
           path: chiaki-ng/appimage/chiaki-ng.AppImage_arm64
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
