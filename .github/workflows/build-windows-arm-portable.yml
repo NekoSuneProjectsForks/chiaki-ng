@@ -203,4 +203,4 @@ jobs:
           name: chiaki-ng-win_arm64-VC-Release
           path: ${{ env.RELEASE_PACKAGE_PATH }}
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
