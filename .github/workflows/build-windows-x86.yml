@@ -198,7 +198,7 @@ jobs:
           name: chiaki-ng-win_x64-VC-Release
           path: ${{ env.RELEASE_PACKAGE_PATH }}
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
 
       - name: Compile .ISS to .EXE Installer
         uses: Minionguyjpro/Inno-Setup-Action@v1.2.7
@@ -212,4 +212,4 @@ jobs:
           name: chiaki-ng-win_x64-VC-installer.zip
           path: chiaki-ng-windows-installer.exe
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
