@@ -108,7 +108,7 @@ jobs:
           name: chiaki-ng-win_x64-MSYS2-SDL2-Release-portable.zip
           path: ${{ env.RELEASE_PACKAGE_PATH }}
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
 
       - name: Compile .ISS to .EXE Installer
         uses: Minionguyjpro/Inno-Setup-Action@v1.2.7
@@ -126,4 +126,4 @@ jobs:
           name: chiaki-ng-win_x64-MSYS2-SDL2-Release-installer.exe
           path: chiaki-ng-win_x64-MSYS2-SDL2-installer.exe
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
