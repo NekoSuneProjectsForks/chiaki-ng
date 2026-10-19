@@ -193,4 +193,4 @@ jobs:
           name: chiaki-ng-win_arm64-VC-installer.zip
           path: chiaki-ng-windows-installer.exe
           if-no-files-found: error
-          retention-days: 7
+          retention-days: 1
